@@ -19,7 +19,7 @@ const Header = () => {
                 <img src='/logo.png' width={100} height={150} alt='logo' />
                 <div className='flex gap-6 items-center'>
                     {headerMenu.map((item) => (
-                        <div className='flex gap-2 items-center'>
+                        <div key={item.id} className='flex gap-2 items-center'>
                             <img src={item.icon} width={23} height={50} alt='icon' />
                             <h2 className='text-[14px] font-medium'>{item.name}</h2> 
                         </div>
