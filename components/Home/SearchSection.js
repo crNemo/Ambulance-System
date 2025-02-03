@@ -45,10 +45,10 @@ const SearchSection = () => {
   return (
     <div>
       <div className='p-2 md:pd-5 border-[2px] rounded-xl'>
-        <p className='text-[20px] font-bold'>Get Ambulance</p>
+        <p className='text-[20px] font-bold text-[#5f6fff]'>Get Ambulance</p>
         <InputItem type='source' />
         <InputItem type='destination' />
-        <button className='p-3 bg-black w-full mt-5 text-white rounded-lg' onClick={calculateDistance}>
+        <button className='p-3 bg-[#5f6fff] w-full mt-5 text-white rounded-lg' onClick={calculateDistance}>
           Search
         </button>
       </div>

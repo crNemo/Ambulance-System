@@ -1,6 +1,6 @@
 "use client";
 import GoogleMapSection from "@/components/Home/GoogleMapSection";
-import SearchSection from "@/components/Home/SearchSection";
+import SearchSection from '../components/Home/SearchSection';
 import { DestinationContext } from "@/context/DestinationContext";
 import { SourceContext } from "@/context/SourceContext";
 import { LoadScript } from "@react-google-maps/api";

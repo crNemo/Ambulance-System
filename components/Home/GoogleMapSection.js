@@ -140,7 +140,7 @@ const GoogleMapSection = () => {
           options={{
             suppressMarkers: true,
             polylineOptions: {
-              strokeColor: 'green',
+              strokeColor: 'black',
               strokeWeight: 5,
             },
           }}
