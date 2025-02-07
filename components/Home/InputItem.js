@@ -1,8 +1,8 @@
 "use client";
 import React, { useContext, useEffect, useState } from 'react';
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
-import { SourceContext } from '@/context/SourceContext';
-import { DestinationContext } from '@/context/DestinationContext';
+import { SourceContext } from '../../context/SourceContext';
+import { DestinationContext } from '../../context/DestinationContext';
 
 const InputItem = ({ type }) => {
   const [value, setValue] = useState(null);
