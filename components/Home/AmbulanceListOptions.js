@@ -8,29 +8,29 @@ import { Toaster } from 'react-hot-toast';
 
 const AmbulanceListOptions = ({ distance }) => {
 
-    const handleToast=()=>{
+  const handleToast = () => {
 
-      toast.promise(
-        new Promise((resolve, reject) => {
-          if (selectedAmbulance) {
-            resolve();
-          } else {
-            reject();
-          }
-        }),
-         {
-           loading: 'Booking in progress...',
-           success: <b>Ambulance on the Way!!</b>,
-           error: <b>Try another Ambulance Sorry -_- </b>,
-         }
-       );
-    }
+    toast.promise(
+      new Promise((resolve, reject) => {
+        if (selectedAmbulance) {
+          resolve();
+        } else {
+          reject();
+        }
+      }),
+      {
+        loading: 'Booking in progress...',
+        success: <b>Ambulance on the Way!!</b>,
+        error: <b>Try another Ambulance Sorry -_- </b>,
+      }
+    );
+  }
 
   const [activeIndex, setActiveIndex] = useState();
   const [selectedAmbulance, setSelectedAmbulance] = useState(null);
 
   const [loading, setLoading] = useState(false);
-    const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
 
 
   return (
@@ -49,12 +49,12 @@ const AmbulanceListOptions = ({ distance }) => {
       {selectedAmbulance?.name ? (
         <div className='flex justify-between fixed bottom-5 bg-white p-3 shadow-xl w-full md:w-[30%] border-[1px] items-center'>
           <h2>Make Payment For</h2>
-            <button 
-                className='mt-2 p-3 bg-[#5f6fff] text-white rounded-lg' 
-                onClick={handleToast}>
-                Resuest Payment
-            </button>
-        
+          <button
+            className='mt-2 p-3 bg-[#5f6fff] text-white rounded-lg'
+            onClick={handleToast}>
+            Resuest Payment
+          </button>
+
         </div>
       ) : null}
       <Toaster />
